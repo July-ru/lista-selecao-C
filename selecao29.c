@@ -1,24 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    int num[4];
-    int i;
+    int n1, n2, n3, n4;
 
-    // Leitura de 4 n�meros
-    for (i = 0; i < 4; i++) {
-        printf("Digite o numero %d: ", i+1);
-        scanf("%d", &num[i]);
-    }
+    printf("Digite o 1º numero: ");
+    scanf("%d", &n1);
+
+    printf("Digite o 2º numero: ");
+    scanf("%d", &n2);
+
+    printf("Digite o 3º numero: ");
+    scanf("%d", &n3);
+
+    printf("Digite o 4º numero: ");
+    scanf("%d", &n4);
 
     printf("Numeros divisiveis por 2 e 3: ");
-    for (i = 0; i < 4; i++) {
-        if (num[i] % 2 == 0 && num[i] % 3 == 0) {
-            printf("%d ", num[i]);
-        }
-    }
+
+    if (n1 % 2 == 0 && n1 % 3 == 0)
+        printf("%d ", n1);
+
+    if (n2 % 2 == 0 && n2 % 3 == 0)
+        printf("%d ", n2);
+
+    if (n3 % 2 == 0 && n3 % 3 == 0)
+        printf("%d ", n3);
+
+    if (n4 % 2 == 0 && n4 % 3 == 0)
+        printf("%d ", n4);
 
     printf("\n");
 
     return 0;
 }
-
