@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//questão 29
+
 int main() {
     int n1, n2, n3, n4;
 
